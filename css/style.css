@@ -1,0 +1,295 @@
+/*
+Project Name:
+Author:
+*/
+
+/******************************************
+/* SETUP
+/*******************************************/
+/* Box Model Hack: http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+}
+/* Micro clearfix hack: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+/******************************************
+/* BASE STYLES
+/*******************************************/
+body {
+  color: black;
+  font-size: 16px;
+  background: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: #235758;
+}
+
+h1 {
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+}
+
+/*HEADER*/
+
+.header {
+	background-color: #DDDDDD;
+
+}
+
+.wrapper {
+	padding: 10px 0;
+}
+
+.logo,
+.nav {
+	text-align: center;
+	color: #30303A;
+}
+
+.logo {
+	font-family: 'Oswald', sans-serif;
+	font-size: 40px;
+	font-weight: 700;
+}
+
+.nav a {
+	text-decoration: none;
+	color: #30303A;
+}
+
+.nav a:hover {
+	color: #4AB6B7;
+}
+
+.nav ul {
+	padding-left: 0;
+}
+
+.nav li {
+	list-style-type: none;
+	text-transform: uppercase;	
+	font-weight: 700;
+	padding: 5px 0;
+}
+
+/*HERO-1*/
+
+.hero {
+	background-image: url(../images/denali.jpg);
+	height: 400px;
+	width: 100%;
+	background-size: cover;
+	margin-top: 0;
+	box-shadow:inset -1px -1px 30px #30303A;
+	padding: 1em 0;
+ 
+}
+
+.hero-bg {
+	background-color: rgba(48, 48, 48, 0.4);
+	width: 400px;
+	padding: 20px;
+	position: relative;
+	top: 175px;
+}
+
+h1 {
+	text-align: center;
+	color: #dddddd;
+	font-weight: 400;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+p {
+	text-align: center;
+	color: #dddddd;
+}
+
+.button {
+	background-color: #4AB6B7;
+	max-width: 300px;
+	border-radius: 5px;
+	text-align: center;
+	font-weight: 700;
+	height: 40px;
+	padding-top: 10px;
+	box-shadow: 0 3px 0 0 #235758;
+	transition: all .15s ease-in-out;
+	color: #235758;
+	margin: 0 auto;
+
+}
+
+.button:hover {
+	cursor: pointer;
+	background-color: #8ACFD0;
+}
+
+/*BREAKER*/
+.breaker {
+	background-color: #DDDDDD;
+	height: 5px;
+}
+
+/*HERO-2*/
+.hero-2 {
+	background-image: url(../images/moraine-lake.jpg);
+	height: 400px;
+	width: 100%;
+	background-size: cover;
+	margin-top: 0;
+	box-shadow:inset -1px -1px 30px #30303A;
+	padding: 1em 0;
+} 
+
+.hero-2-bg {
+	background-color: rgba(48, 48, 48, 0.4);
+	width: 400px;
+	padding: 20px;
+	position: relative;
+	top: 175px;
+}
+
+/*HERO-3*/
+.hero-3 {
+	background-image: url(../images/arches.jpg);
+	height: 400px;
+	width: 100%;
+	background-size: cover;
+	margin-top: 0;
+	box-shadow:inset -1px -1px 30px #30303A;
+	padding: 1em 0;
+} 
+
+.hero-3-bg {
+	background-color: rgba(48, 48, 48, 0.4);
+	width: 400px;
+	padding: 20px;
+	position: relative;
+	top: 175px;
+}
+
+
+/*FOOTER*/
+footer {
+	background-color: #30303A;
+	color: #DDDDDD;
+	padding: 1em 0;
+	border-top: 5px solid #DDDDDD;
+}
+
+footer p{
+	text-align: center;
+	text-transform: uppercase;
+}
+
+
+/******************************************
+/* MEDIA QUERIES
+/*******************************************/
+@media (min-width: 768px) {
+
+.nav li {
+	display: inline-block;
+	margin-left: 20px;
+	text-align: right;
+
+}
+
+.logo {
+	padding-left: 40px;
+}
+
+.nav {
+	padding-right: 40px;
+}
+
+.logo,
+.nav {
+	display: inline-block;
+}
+
+.wrapper {
+	margin: 0 40px;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.nav {
+	float: right;
+}
+
+.hero {
+	height: 800px;
+}
+
+.hero-bg {
+	background-color: rgba(48, 48, 48, 0.4);
+	width: 400px;
+	float: right;
+	position: relative;
+	top: 500px;
+	margin-right: 40px;
+
+}
+
+.hero-2 {
+	height: 800px;
+}
+
+.hero-2-bg {
+	background-color: rgba(48, 48, 48, 0.4);
+	width: 400px;
+	float: right;
+	position: relative;
+	top: 500px;
+	margin-right: 40px;
+
+}
+
+.hero-3 {
+	height: 800px;
+}
+
+.hero-3-bg {
+	background-color: rgba(48, 48, 48, 0.4);
+	width: 400px;
+	float: right;
+	position: relative;
+	top: 500px;
+	margin-right: 40px;
+
+}
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
