@@ -203,7 +203,7 @@ footer p{
 /******************************************
 /* MEDIA QUERIES
 /*******************************************/
-@media screen (min-width: 768px) {
+@media (min-width: 768px) {
 
 .nav li {
 	display: inline-block;
