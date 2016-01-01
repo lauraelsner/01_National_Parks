@@ -88,9 +88,9 @@ h1 {
 	padding: 5px 0;
 }
 
-/*HERO-1*/
+/*HERO 1 (Denali)*/
 
-.hero {
+.hero-1 {
 	background-image: url(../images/denali.jpg);
 	height: 400px;
 	width: 100%;
@@ -101,9 +101,9 @@ h1 {
  
 }
 
-.hero-bg {
+.hero-1-bg {
 	background-color: rgba(48, 48, 48, 0.4);
-	width: 400px;
+	width: 100%;
 	padding: 20px;
 	position: relative;
 	top: 175px;
@@ -147,9 +147,9 @@ p {
 	height: 5px;
 }
 
-/*HERO-2*/
+/*HERO 2 (Arches)*/
 .hero-2 {
-	background-image: url(../images/moraine-lake.jpg);
+	background-image: url(../images/arches.jpg);
 	height: 400px;
 	width: 100%;
 	background-size: cover;
@@ -160,15 +160,15 @@ p {
 
 .hero-2-bg {
 	background-color: rgba(48, 48, 48, 0.4);
-	width: 400px;
+	width: 100%px;
 	padding: 20px;
 	position: relative;
 	top: 175px;
 }
 
-/*HERO-3*/
+/*HERO 3 (Rocky Mountain)*/
 .hero-3 {
-	background-image: url(../images/arches.jpg);
+	background-image: url(../images/moraine-lake.jpg);
 	height: 400px;
 	width: 100%;
 	background-size: cover;
@@ -179,7 +179,7 @@ p {
 
 .hero-3-bg {
 	background-color: rgba(48, 48, 48, 0.4);
-	width: 400px;
+	width: 100%;
 	padding: 20px;
 	position: relative;
 	top: 175px;
@@ -203,7 +203,7 @@ footer p{
 /******************************************
 /* MEDIA QUERIES
 /*******************************************/
-@media (min-width: 768px) {
+@media screen (min-width: 768px) {
 
 .nav li {
 	display: inline-block;
@@ -235,11 +235,13 @@ footer p{
 	float: right;
 }
 
-.hero {
+/*Hero 1 (Denali)*/
+
+.hero-1 {
 	height: 800px;
 }
 
-.hero-bg {
+.hero-1-bg {
 	background-color: rgba(48, 48, 48, 0.4);
 	width: 400px;
 	float: right;
@@ -248,6 +250,8 @@ footer p{
 	margin-right: 40px;
 
 }
+
+/*Hero 2 (Arches)*/
 
 .hero-2 {
 	height: 800px;
@@ -263,6 +267,8 @@ footer p{
 
 }
 
+/*Hero 3 (Rocky Mountain)*/
+
 .hero-3 {
 	height: 800px;
 }
@@ -276,6 +282,8 @@ footer p{
 	margin-right: 40px;
 
 }
+
+
 
 
 
