@@ -68,13 +68,30 @@ h1 {
 	font-weight: 700;
 }
 
+.logo a {
+	color: #30303A;
+	transition: all .05s ease-in-out;
+}
+
+.logo a:hover {
+	color: #ADADAD;
+}
+
 .nav a {
 	text-decoration: none;
 	color: #30303A;
+	transition: all .05s ease-in-out;
 }
 
 .nav a:hover {
-	color: #4AB6B7;
+	color: #ADADAD;
+	border-bottom: 4px solid #ADADAD; 
+}
+
+.nav a.current {
+	/*color: #3AB6B8;*/
+	border-bottom: 4px solid #3AB6B8;
+
 }
 
 .nav ul {
@@ -282,6 +299,19 @@ footer p{
 	margin-right: 40px;
 
 }
+
+/******************************************
+/* PAGE: COMPLETE INDEX
+/*******************************************/
+
+.all-parks {
+	margin: 0 60px;
+}
+
+
+
+
+
 
 
 
